@@ -1,3 +1,5 @@
+
+
 function fizzBuzz(number) {
   if ( typeof number === 'number' && ( number % 1 ) === 0 ) {
     if (hasZeroReminder(number, 15)) {
@@ -6,6 +8,8 @@ function fizzBuzz(number) {
         return "Buzz";
     } else if (hasZeroReminder(number, 3)) {
         return "Fizz";
+    } else {
+        return number;
     }
   }
 

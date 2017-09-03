@@ -5,11 +5,12 @@ describe('fizzBuzz - index.html', function() {
       $.holdReady(false);
     });
 
-    it("will display fizz if a number is divisible by 3", function (){
+    it ("will display fizz if a number is divisible by 3", function() {
       $('#number').val(3);
       $('#calculate').trigger('click');
-      expect($('#display_message').text()).toBe('fizz');
+      expect($('#display_message').text()).toBe('Fizz');
     });
+
     /**
     it("will display buzz if number is divisible by 5", function() {
       $('#number').val(5);

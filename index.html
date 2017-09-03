@@ -7,16 +7,19 @@
     <script src="assets/js/fizz_buzz_funct.js"></script>
     <script src="assets/js/app.js"></script>
     <title>Andrea's Fizz Buzz Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fizz.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </head>
   <body>
-    <h3>Fizz Buzz game!</h3>
-    <input type="number" id="number" placeholder="Write a number">
-    <input type="button" id="calculate" value="Click me please!">
-    <div>
-      <span id="display_message"></span>
+    <div  class="container center">
+      <h3 class="center-align">Fizz Buzz game!</h3>
+      <input type="number" id="number" placeholder="Write a number">
+      <a class="btn" id="calculate" onclick="Materialize.Toast.removeAll(); Materialize.toast($toastContent, 100000);">Click me please!</a>
     </div>
     <script type="text/javascript">
       $(document).ready(onReadyEvents);
+      var $toastContent = $('<span id="display_message"></span>');
     </script>
   </body>
 </html>
