@@ -15,4 +15,8 @@ describe("fizzBuzz", function() {
   it("should return 'FizzBuzz' if number is divisible by 3 and 5", function(){
     expect(fizzBuzz(15)).toBe("FizzBuzz")
   })
+
+  it ("should return an error if user does not put an Integer", function(){
+    expect(fizzBuzz("strings")).toEqual("Enter an integer")
+  })
 });
