@@ -1,18 +1,19 @@
-function hasZeroReminder(number, dividend) {
-  return number % dividend == 0;
-}
-
 function fizzBuzz(number) {
-  if (typeof number==='number' && (number%1)===0) {
-    if (number % 15 == 0) {
+  if ( typeof number === 'number' && ( number % 1 ) === 0 ) {
+    if (hasZeroReminder(number, 15)) {
       return "FizzBuzz";
-    } else if (number % 5 == 0) {
+    } else if (hasZeroReminder(number, 5)) {
         return "Buzz";
-    } else if (number % 3 == 0) {
+    } else if (hasZeroReminder(number, 3)) {
         return "Fizz";
     }
   }
+
   else {
-    return "Enter an integer"
-    }
-  };
+    return "You need to write a number";
+  }
+};
+
+function hasZeroReminder(number, dividend) {
+  return number % dividend == 0;
+};

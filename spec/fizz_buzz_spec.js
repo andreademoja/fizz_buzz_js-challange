@@ -17,6 +17,6 @@ describe("fizzBuzz", function() {
   })
 
   it ("should return an error if user does not put an Integer", function(){
-    expect(fizzBuzz("strings")).toEqual("Enter an integer")
+    expect(fizzBuzz("strings")).toEqual("You need to write a number")
   })
 });
