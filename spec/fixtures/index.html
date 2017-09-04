@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrea's Fizz Buzz Game</title>
-    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
-    <script src="assets/js/fizz_buzz_funct.js"></script>
-    <script src="assets/js/app.js"></script>
-  </head>
   <body>
     <h3>Fizz Buzz game!</h3>
     <input type="number" id="number" placeholder="Write a number">
     <input type="button" id="calculate" value="Click me please!">
+    <a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Click me please!</a>
     <div>
       <span id="display_message"></span>
     </div>
@@ -19,4 +10,3 @@
       $(document).ready(onReadyEvents);
     </script>
   </body>
-</html>
